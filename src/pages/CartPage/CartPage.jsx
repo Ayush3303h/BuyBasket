@@ -22,7 +22,7 @@ const CartPage = () => {
   };
   
   const formatPrice = (price) => {
-    return price.toFixed(2);
+    return (price * 83).toFixed(2);
   };
   
   if (cartItems.length === 0) {
@@ -72,7 +72,7 @@ const CartPage = () => {
             
             <div className="summary-item">
               <span>Subtotal</span>
-              <span>${formatPrice(cartTotal)}</span>
+              <span>₹{formatPrice(cartTotal)}</span>
             </div>
             
             <div className="summary-item">
@@ -82,14 +82,14 @@ const CartPage = () => {
             
             <div className="summary-item">
               <span>Taxes</span>
-              <span>${formatPrice(cartTotal * 0.08)}</span>
+              <span>₹{formatPrice(cartTotal * 0.08)}</span>
             </div>
             
             <div className="summary-divider"></div>
             
             <div className="summary-item total">
               <span>Total</span>
-              <span>${formatPrice(cartTotal + (cartTotal * 0.08))}</span>
+              <span>₹{formatPrice(cartTotal + (cartTotal * 0.08))}</span>
             </div>
             
             <div className="promo-code">

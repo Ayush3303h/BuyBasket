@@ -21,7 +21,7 @@ const CartItem = ({ item }) => {
   };
   
   const formatPrice = (price) => {
-    return price.toFixed(2);
+    return (price * 83).toFixed(2);
   };
   
   return (
@@ -32,7 +32,7 @@ const CartItem = ({ item }) => {
       
       <div className="cart-item-details">
         <h3 className="cart-item-name">{item.name}</h3>
-        <p className="cart-item-price">${formatPrice(item.price)}</p>
+        <p className="cart-item-price">₹{formatPrice(item.price)}</p>
       </div>
       
       <div className="cart-item-quantity">
@@ -53,7 +53,7 @@ const CartItem = ({ item }) => {
       </div>
       
       <div className="cart-item-total">
-        <span>${formatPrice(item.price * item.quantity)}</span>
+        <span>₹{formatPrice(item.price * item.quantity)}</span>
       </div>
       
       <button 

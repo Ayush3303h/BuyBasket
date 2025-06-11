@@ -99,7 +99,7 @@ const CheckoutPage = () => {
   };
   
   const formatPrice = (price) => {
-    return price.toFixed(2);
+    return (price * 83).toFixed(2);
   };
   
   return (
@@ -313,10 +313,10 @@ const CheckoutPage = () => {
                     </div>
                     <div className="order-item-details">
                       <h3>{item.name}</h3>
-                      <p>${formatPrice(item.price)}</p>
+                      <p>₹{formatPrice(item.price)}</p>
                     </div>
                     <div className="order-item-total">
-                      ${formatPrice(item.price * item.quantity)}
+                      ₹{formatPrice(item.price * item.quantity)}
                     </div>
                   </div>
                 ))}
@@ -327,7 +327,7 @@ const CheckoutPage = () => {
               <div className="order-totals">
                 <div className="order-total-row">
                   <span>Subtotal</span>
-                  <span>${formatPrice(cartTotal)}</span>
+                  <span>₹{formatPrice(cartTotal)}</span>
                 </div>
                 <div className="order-total-row">
                   <span>Shipping</span>
@@ -335,11 +335,11 @@ const CheckoutPage = () => {
                 </div>
                 <div className="order-total-row">
                   <span>Taxes</span>
-                  <span>${formatPrice(cartTotal * 0.08)}</span>
+                  <span>₹{formatPrice(cartTotal * 0.08)}</span>
                 </div>
                 <div className="order-total-row grand-total">
                   <span>Total</span>
-                  <span>${formatPrice(cartTotal + (cartTotal * 0.08))}</span>
+                  <span>₹{formatPrice(cartTotal + (cartTotal * 0.08))}</span>
                 </div>
               </div>
             </div>
