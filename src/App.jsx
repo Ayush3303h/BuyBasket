@@ -6,7 +6,10 @@ import ProductsPage from './pages/ProductsPage/ProductsPage';
 import CartPage from './pages/CartPage/CartPage';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage/OrderConfirmationPage';
+<<<<<<< HEAD
 import LoginPage from './pages/LoginPage';
+=======
+>>>>>>> 6b05b5e0dcf7a35cc639e61ebeae39850723cc81
 import { useCart } from './context/CartContext';
 import './styles/App.css';
 
@@ -42,7 +45,10 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/confirmation" element={<OrderConfirmationPage />} />
+<<<<<<< HEAD
           <Route path="/login" element={<LoginPage />} />
+=======
+>>>>>>> 6b05b5e0dcf7a35cc639e61ebeae39850723cc81
         </Routes>
       </main>
       <Footer />
