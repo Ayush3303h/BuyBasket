@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "template": "vite-react",
   "firebaseConfig": {
     "apiKey": "AIzaSyAzgk_1zhamhegmXVCoGYQ1mCrF_Lqe2w8",
@@ -9,7 +8,4 @@
     "messagingSenderId": "YOUR_MESSAGING_SENDER_ID",
     "appId": "YOUR_APP_ID"
   }
-=======
-  "template": "vite-react"
->>>>>>> 6b05b5e0dcf7a35cc639e61ebeae39850723cc81
 }
